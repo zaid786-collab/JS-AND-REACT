@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // Functions : Block of code,used or defined to perform specific task.
+        // Types of Function : 
+        // Functions are Synchronous in JS,task is perform one after another.
+
+        // Normal Function : - with para,without para and with default paramaters.
+
+        // Normal Function without Parameters....
+
+        function demo(){
+            console.log("Hello J.S");
+        };
+        demo();
+
+        // With Parameters : 
+
+        function demo1(text){
+            console.log("Hello J.S " + text);
+        };
+        demo1("React");
+
+        // Default Parameter : 
+
+        function add(z,b = 23){
+            console.log(`Addition is -- ${z+b}`);
+        };
+        add(45,902);
+
+       // s
+       function cal(){
+            function add(a,b){
+                console.log(a+b);
+            }
+            function mul(c,d){
+                console.log(c*d);
+            }
+            function div(z,x){
+                console.log(z/x);
+            }
+        add(89,89);
+        mul(90,2);
+        div(56,2);
+        } 
+        cal();
+
+        // Anomanous Function :-
+
+        let msg=function(){
+            console.log("hello ABES");
+            console.log(typeof(msg));
+        }
+        msg();
+
+        // Short code for above code : Arrow Function :- 
+
+        let msg1 = ()=>console.log("Hello World");
+        msg1();
+
+        // arrow function using multiple lines
+
+        let msg2=(a,b)=>{
+            var num1=a;
+            var num2=b;
+            var res=num1/num2;
+            console.log("Result is : " + res);
+        }
+        msg2(100,7);
+
+        // CallBack Q :- IIFE :- 
+
+        (function(){
+            console.log("Hello");
+        })();
+
+        (msg=>console.log("hello"))();
+
+
+
+
+    </script>
+</body>
+</html>
