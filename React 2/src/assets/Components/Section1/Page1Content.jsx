@@ -10,7 +10,7 @@ const Page1Content = (props) => {
     <LeftContent/>
       </div>
       
-    <div className='p-3 w-2/3 flex gap-10'>
+    <div className='p-10 w-2/3 flex gap-10'>
     <RightContent users={props.users}/>
     </div>
       

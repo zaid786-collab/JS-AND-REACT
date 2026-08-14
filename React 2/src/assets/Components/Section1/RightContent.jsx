@@ -7,7 +7,7 @@ const RightContent = (props) => {
     <>
        {props.users.map(function(elem){
 
-        return <RightCard img={elem.img} tag={elem.tag} num={elem.num}/>
+        return <RightCard img={elem.img} tag={elem.tag} num={elem.num} color={elem.color}/>
        })}     
     </>
   )

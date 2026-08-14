@@ -15,8 +15,8 @@ const RightCard = (props) => {
 
                 <div className='flex justify-around mt-10'>
 
-                    <button className='bg-blue-600 text-white font-medium px-4 py-3 rounded-full'>{props.tag}</button>
-                    <button className='bg-blue-600 text-white font-medium px-4 py-3 rounded-full'><MoveRight/></button>
+                    <button style={{color:'Red',backgroundColor : 'White'}} className='font-medium px-4 py-3 rounded-full'>{props.tag}</button>
+                    <button style={{backgroundColor:props.color}} className=' text-white font-medium px-4 py-3 rounded-full'><MoveRight/></button>
                 </div>
             </div>
         </div>
