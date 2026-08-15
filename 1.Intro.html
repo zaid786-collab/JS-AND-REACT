@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tailwind Components & Grid</title>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen p-6">
+
+    <header class="bg-white shadow-lg rounded-2xl p-6 mb-6">
+      <h1 class="text-4xl font-bold text-blue-600 underline">
+        Hello World!
+      </h1>
+
+      <p class="text-gray-600 mt-2">
+        Tailwind CSS Components + Grid Layout Example
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+      <aside class="bg-white rounded-2xl shadow-md p-5">
+        <h2 class="text-2xl font-semibold mb-4 text-purple-600">
+          Sidebar
+        </h2>
+
+        <ul class="space-y-3">
+          <li class="bg-purple-100 p-3 rounded-lg hover:bg-purple-200 cursor-pointer">
+            Dashboard
+          </li>
+
+          <li class="bg-purple-100 p-3 rounded-lg hover:bg-purple-200 cursor-pointer">
+            Profile
+          </li>
+
+          <li class="bg-purple-100 p-3 rounded-lg hover:bg-purple-200 cursor-pointer">
+            Settings
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="md:col-span-3 space-y-6">
+
+        <!-- Cards Grid -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <div class="bg-white rounded-2xl shadow-md p-5">
+            <h3 class="text-xl font-bold text-red-500 mb-2">
+              Card 1
+            </h3>
+
+            <p class="text-gray-600">
+              Responsive Tailwind card component with shadows and spacing.
+            </p>
+
+            <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
+              Read More
+            </button>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-md p-5">
+            <h3 class="text-xl font-bold text-green-500 mb-2">
+              Card 2
+            </h3>
+
+            <p class="text-gray-600">
+              Grid system automatically adjusts for mobile and desktop.
+            </p>
+
+            <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+              Explore
+            </button>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-md p-5">
+            <h3 class="text-xl font-bold text-blue-500 mb-2">
+              Card 3
+            </h3>
+
+            <p class="text-gray-600">
+              Tailwind utility classes make UI development fast.
+            </p>
+
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+              Learn More
+            </button>
+          </div>
+        </section>
+
+        <!-- Nested Grid -->
+        <section class="bg-white rounded-2xl shadow-md p-6">
+          <h2 class="text-2xl font-bold text-indigo-600 mb-4">
+            Nested Grid Example
+          </h2>
+
+          <div class="grid grid-cols-4 gap-4">
+
+            <div class="bg-indigo-100 p-4 rounded-lg text-center font-bold">
+              Start
+            </div>
+
+            <div class="bg-indigo-100 p-4 rounded-lg text-center font-bold">
+              Home
+            </div>
+
+            <div class="bg-indigo-100 p-4 rounded-lg text-center font-bold">
+              Info
+            </div>
+
+            <div class="bg-indigo-100 p-4 rounded-lg text-center font-bold">
+              Tutorial
+            </div>
+
+            <div class="col-span-4 grid grid-cols-4 gap-4">
+
+              <div class="bg-pink-200 p-4 rounded-lg text-center">
+                Premium
+              </div>
+
+              <div class="bg-pink-200 p-4 rounded-lg text-center">
+                New
+              </div>
+
+              <div class="bg-pink-200 p-4 rounded-lg text-center">
+                Updates
+              </div>
+
+              <div class="bg-pink-200 p-4 rounded-lg text-center">
+                About
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Article Section -->
+        <section class="bg-white rounded-2xl shadow-md p-6">
+          <h2 class="text-2xl font-bold text-orange-500 mb-4">
+            Article Component
+          </h2>
+
+          <p class="text-gray-700 leading-7">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Assumenda qui beatae fuga autem sed quia quod quas.
+            Provident officiis vero porro, vitae impedit, modi quos
+            tempore magni fuga numquam veritatis.
+          </p>
+
+          <div class="mt-6 flex gap-4">
+            <button class="bg-orange-500 text-white px-5 py-2 rounded-lg hover:bg-orange-600">
+              Accept
+            </button>
+
+            <button class="border border-orange-500 text-orange-500 px-5 py-2 rounded-lg hover:bg-orange-100">
+              Cancel
+            </button>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+  </body>
+</html>
